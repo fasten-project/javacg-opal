@@ -17,6 +17,11 @@ java -jar javacg-opal-0.0.1-SNAPSHOT-with-dependencies.jar ([[-a=ARTIFACT] [-t=T
                   DEPS...]] [-d=DEPS[,DEPS...]]... [-l=ALG]]]]) [-o=OUT]
 ```
 
+# Requirements
+This tool requires Java 11 or later to be executed.
+
+The tool itself can generate call graphs for application targeting Java 8 (i.e. Java 8 bytecode).
+
 # Examples
 ## Generate
 Generating call graph for `org.slf4j:slf4j-api:1.7.29`:
@@ -43,5 +48,3 @@ Stitches the maven coordinates call graphs and writes the artifact resolved call
 ```
 -s -a abbot:costello:1.4.0 -d abbot:abbot:1.4.0 -m COORD -o <ResultPath> -l CHA
 ```
-#### Note
-Please note that this tool works with Java 8 compiled bytecode.
